@@ -41,5 +41,5 @@ public class CalculaDescontoTest {
 
         assertEquals(valorDaCompraComDesconto,valorRetornado,0.01);
     }
-
+    
 }

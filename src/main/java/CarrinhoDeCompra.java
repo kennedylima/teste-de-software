@@ -5,20 +5,22 @@ public class CarrinhoDeCompra {
 
     ArrayList<Produto> carrinhoDeCompra = new ArrayList<Produto>();
 
-    public void adicionar(Produto cama) {
+    public void adicionar(Produto produto) {
+        if(carrinhoDeCompra.contains(produto)){
+            int indexDoProduto = carrinhoDeCompra.indexOf(produto);
+            carrinhoDeCompra.get(indexDoProduto).incrementarQuantidade();
 
-        cama.incrementarQuantidade();
-        carrinhoDeCompra.add(cama);
-
+        }else{
+            produto.incrementarQuantidade();
+            carrinhoDeCompra.add(produto);
+        }
     }
 
     public ArrayList<Produto> getItensDoCarrinho() {
-
         return carrinhoDeCompra;
     }
 
     public void remover(Produto cama) {
         carrinhoDeCompra.remove(cama);
-
     }
 }
