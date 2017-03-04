@@ -4,7 +4,7 @@ import static org.hamcrest.Matchers.*;
 
 import java.util.ArrayList;
 
-public class CarrinhoDeCompraTeste {
+public class CarrinhoDeCompraTest {
 
     @Test
 
@@ -62,6 +62,9 @@ public class CarrinhoDeCompraTeste {
 
         new Produto(descricao,valor);
     }
+
+
+
 
 
 }
